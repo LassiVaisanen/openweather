@@ -1,0 +1,27 @@
+import { View, Text, StyleSheet } from 'react-native';
+import Position from './components/Position';
+
+export default function App() {
+  return (
+    <View style = {styles.container}>
+      <Text style={styles.heading}>Current Weather</Text>
+      <Position />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 40
+  },
+  heading: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 16
+  },
+});
